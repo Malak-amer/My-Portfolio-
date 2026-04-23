@@ -1,0 +1,78 @@
+/* التنسيق العام */
+body {
+    background-color: #FDF2F4; /* خلفية بيبي بينك هادية */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #4A4A4A;
+}
+
+/* الهيدر (الجزء العلوي) */
+header {
+    background: linear-gradient(135deg, #FFD1DC, #FFB6C1);
+    color: #4A4A4A;
+    padding: 80px 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* شكل الصورة المدورة */
+.profile-pic {
+    width: 180px;
+    height: 180px;
+    object-fit: cover; /* بيخلي الصورة متناسقة جوه الدايرة */
+    border-radius: 50%; /* بيعمل الدايرة */
+    border: 6px solid white; /* إطار أبيض شيك */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: all 0.4s ease-in-out; /* حركة ناعمة */
+}
+
+/* حركة الصورة لما الماوس ييجي عليها */
+.profile-pic:hover {
+    transform: scale(1.08) rotate(3deg);
+}
+
+.header-text h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #4A4A4A;
+}
+
+/* الأقسام (About, Experience...) */
+section {
+    max-width: 850px;
+    margin: 30px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+h2 {
+    color: #D48197; /* لون وردي غامق للعناوين */
+    border-bottom: 2px solid #FFD1DC;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    background: #FFF9FA;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    border-left: 5px solid #FFD1DC;
+}
